@@ -12,7 +12,7 @@ url: "https://le4ker.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: "/ga_blog"
+baseurl: "Personal_Website"
 
 # Google tracking id
 
@@ -220,5 +220,3 @@ sass:
 gems:
   - jekyll-paginate
   - jemoji
-
-theme: jekyll-theme-cayman
