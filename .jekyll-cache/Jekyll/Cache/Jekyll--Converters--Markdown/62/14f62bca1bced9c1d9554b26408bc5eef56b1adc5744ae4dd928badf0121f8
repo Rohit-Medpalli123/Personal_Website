@@ -1,0 +1,63 @@
+I"�
+<p>Below are the detailed steps to install Python and robot framework through PIP :-
+Step  1 – Install Python and PIP</p>
+
+<p>Go to python.org Python 3.7 and download desired version (suggested – 3.7)</p>
+
+<p>Check Add Python 3.7 to path</p>
+
+<p>Click Install Now
+  Once installation was successful, Go to cmd and type Python -V, it will display the installed version.</p>
+
+<p>PIP will get installed with python automatically, use PIP list command in the cmd to check the installation successful or not.</p>
+
+<p>Step # 2 – Install Robot framework and Selenium library through PIP</p>
+
+<p>Use this command pip install robotframework for robot framework library
+  Use this command pip install robotframework-seleniumlibrary for selenium library
+  Use this command pip install robotframework-pabot for pabot library for parallel execution
+  Use this command pip install robotframework-metrics for metrics library
+  Use this command pip install -U requests for python requests library
+  Use this command pip install -U robotframework-requests for robotframework requests library</p>
+
+<p>Note: you can use pip list command to see your installation is successful</p>
+
+<p>Step # 3 – Install Pycharm</p>
+
+<p>Go to this link – Pycharm downloads
+  Download and install Community edition</p>
+
+<p>Click Pycharm installation file
+  Complete the Installation</p>
+
+<p>Step # 4 – Configure Pycharm - intall required plugins</p>
+
+<p>Steps to install plug-in</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Open Pycharm
+  Go to File –&amp;gt; settings –&amp;gt; Click plug-ins
+</code></pre></div></div>
+
+<p>Install IntelliBot @SeleniumLibrary Patched Refer IntelliBot
+  Install Material Theme UI Plugin Refer Material Theme
+  Install CMD Support Refer CMD Support</p>
+
+<p>Please Restart pycharm to activate all the plugins</p>
+
+<p>Step # 5 – Download Web drivers and Configure browser settings</p>
+
+<p>Purpose of Web Driver: Web driver is a library which helps to communicate between your test automation scripts and browsers</p>
+
+<p>Please download IE web driver</p>
+
+<p>Please download Chrome and Firefox web driver</p>
+
+<p>Create a bin directory(Anywhere) and copy the downloaded web drivers to bin directory and add Path
+  (C:\bin) to environmental variables (Advanced system settings –&gt; Environment variables –&gt; System variables –&gt; select Path –&gt; click Edit –&gt; Add C:\bin directory)</p>
+
+<p>Note: If you add path to Environment variables, Robot framework (SeleniumLibrary) will automatically recognize the web drivers, thereby, you don’t need to explicitly mention web driver path in your test scripts.</p>
+
+<p>OR
+We can also add the drivers in the scripts folder of python, As python folder is already added to the Path</p>
+
+:ET
