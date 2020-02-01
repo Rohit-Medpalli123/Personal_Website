@@ -1,0 +1,22 @@
+I"î<p>Jekyll on Windows</p>
+
+<p>Follow below steps to install the Jekyll on windows:</p>
+
+<p>Official jekyll installation page</p>
+
+<p>Windows Installation - Yotube</p>
+
+<p>Writing Posts</p>
+
+<p>Writing Posts steps</p>
+
+<p>Steps</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Create a new file in the Posts By using below command:
+
+cd \Website\personal-jekyll-theme-master 
+</code></pre></div></div>
+
+<p>ruby ./scripts/newpost Jeykll setup on windows</p>
+
+:ET

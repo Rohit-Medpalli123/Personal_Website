@@ -1,0 +1,25 @@
+I"¸<p>Jekyll on Windows</p>
+
+<p>Follow below steps to install the Jekyll on windows:</p>
+
+<p>Official jekyll installation page</p>
+
+<p>Windows Installation - Yotube</p>
+
+<p>Writing Posts</p>
+
+<p>Writing Posts steps</p>
+
+<ol>
+  <li><a href="https://le4ker.github.io/personal-jekyll-theme/tech/2015/06/19/writing-posts.html">Steps to follow for creating a post page</a></li>
+  <li>
+    <p>Create a new file in the <strong>Posts</strong> By using below command:</p>
+
+    <p>cd \Website\personal-jekyll-theme-master</p>
+
+    <p>ruby ./scripts/newpost POSTNAME</p>
+  </li>
+  <li>A a new post template with name YYYY-MM-DD-hello-world.md will be created under ./_posts, with the current date.</li>
+</ol>
+
+:ET

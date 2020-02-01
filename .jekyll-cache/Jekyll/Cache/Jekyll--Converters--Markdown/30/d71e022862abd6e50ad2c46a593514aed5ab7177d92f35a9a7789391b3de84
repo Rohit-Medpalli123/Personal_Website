@@ -1,0 +1,63 @@
+I"3
+<h3 id="installing-seleniumchromedriver-and-xvfb-on-ubuntu">Installing Selenium,ChromeDriver and xvfb on Ubuntu</h3>
+<p><strong>xvfb</strong> (X windows virtual framebuffer)</p>
+
+<p>I recently got Selenium, Google Chrome, and ChromeDriver installed and working on a VM running 64-bit Ubuntu Here’s how:</p>
+
+<p>First, install Google Chrome for Debian/Ubuntu:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libxss1 libappindicator1 libindicator7
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo dpkg -i google-chrome*.deb
+
+sudo apt-get install -f
+</code></pre></div></div>
+<p>Now, let’s install xvfb so we can run Chrome headlessly:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install xvfb
+</code></pre></div></div>
+
+<p>Install ChromeDriver:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install unzip
+
+wget -N http://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip
+
+unzip chromedriver_linux64.zip
+
+chmod +x chromedriver
+
+sudo mv -f chromedriver /usr/local/share/chromedriver
+
+sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+</code></pre></div></div>
+<p>Try the above steps, if that doesn’t work then try below additional steps for XVFB:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Dependencies to make "headless" chrome/selenium work:
+
+sudo apt-get -y install xvfb gtk2-engines-pixbuf
+
+sudo apt-get -y install xfonts-cyrillic xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable
+
+echo "Starting X virtual framebuffer (Xvfb) in background..."
+
+# Run Xvfb in the background and specify a display number (10 in my example) and Set the DISPLAY variable to the number you chose:
+Xvfb -ac :10 -screen 0 1280x1024x16 &amp;
+export DISPLAY=:99
+</code></pre></div></div>
+<p>Install some Python dependencies and Selenium:
+```</p>
+<h1 id="install-pip">Install pip:</h1>
+<p>sudo apt-get install python-pip</p>
+
+<h2 id="optional-create-and-enter-a-virtual-environment">(Optional) Create and enter a virtual environment:</h2>
+<h1 id="sudo-apt-get-install-python-virtualenv">sudo apt-get install python-virtualenv</h1>
+<h1 id="virtualenv-env">virtualenv env</h1>
+<h1 id="source-envbinactivate">source env/bin/activate</h1>
+
+<h1 id="install-selenium-and-pyvirtualdisplay">Install Selenium and pyvirtualdisplay:</h1>
+<p>pip install pyvirtualdisplay selenium</p>
+
+:ET

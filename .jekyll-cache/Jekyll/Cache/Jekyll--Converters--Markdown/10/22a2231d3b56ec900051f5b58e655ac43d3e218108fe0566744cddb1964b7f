@@ -1,0 +1,6 @@
+I"�<p>Vagrant is a command-line tool for building and managing virtual machine environments. By default, Vagrant can provision machines on top of VirtualBox, Hyper-V, and Docker. Other providers such as Libvirt (KVM), VMware and AWS can be installed via the Vagrant plugin system.</p>
+
+<p>Vagrant is typically used by developers to set up a development environment that matches the production environment.</p>
+
+<p>In this tutorial, we’ll show you how to install Vagrant on an Ubuntu 18.04 machine. We’ll be using the VirtualBox provider, which is the default provider for Vagrant. The same steps can be used for Ubuntu 16.04 Xenial Xerus.</p>
+:ET

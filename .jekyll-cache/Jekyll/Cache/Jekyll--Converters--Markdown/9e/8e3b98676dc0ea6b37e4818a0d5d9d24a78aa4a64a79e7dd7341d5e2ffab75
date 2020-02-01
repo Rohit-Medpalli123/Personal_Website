@@ -1,0 +1,5 @@
+I"6<h3 id="installing-seleniumchromedriver-and-xvfb-on-ubuntu">Installing Selenium,ChromeDriver and xvfb on Ubuntu</h3>
+<p>I recently got Selenium, Google Chrome, and ChromeDriver installed and working on a VM running 64-bit Ubuntu 14.04. Here’s how:</p>
+
+<p>First, install Google Chrome for Debian/Ubuntu:</p>
+:ET

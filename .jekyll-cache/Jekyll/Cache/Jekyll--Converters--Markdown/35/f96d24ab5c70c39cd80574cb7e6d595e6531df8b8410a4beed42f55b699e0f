@@ -1,0 +1,37 @@
+I"X<h3 id="installing-seleniumchromedriver-and-xvfb-on-ubuntu">Installing Selenium,ChromeDriver and xvfb on Ubuntu</h3>
+<p><strong>xvfb</strong> (X windows virtual framebuffer)</p>
+
+<p>I recently got Selenium, Google Chrome, and ChromeDriver installed and working on a VM running 64-bit Ubuntu Here’s how:</p>
+
+<p>First, install Google Chrome for Debian/Ubuntu:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install libxss1 libappindicator1 libindicator7
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo dpkg -i google-chrome*.deb
+
+sudo apt-get install -f
+</code></pre></div></div>
+<p>Now, let’s install xvfb so we can run Chrome headlessly:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install xvfb
+</code></pre></div></div>
+
+<p>Install ChromeDriver:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install unzip
+
+wget -N http://chromedriver.storage.googleapis.com/2.26/chromedriver_linux64.zip
+
+unzip chromedriver_linux64.zip
+
+chmod +x chromedriver
+
+sudo mv -f chromedriver /usr/local/share/chromedriver
+
+sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
+sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
+</code></pre></div></div>
+
+:ET
