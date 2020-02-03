@@ -1,0 +1,22 @@
+I"�<p>This article is a tutorial on how to configure Charles Proxy to inspect traffic over cellular networks, and while it’s designed with ad operations use cases in mind, it’s applicable to any front end web developer with similar needs.</p>
+
+<p>There are many articles out there on how to use Charles Proxy through your phone – I’ve written two myself, in fact. All those articles assume you’re leveraging a Wifi network when connecting to the internet, however and while that’s fine for basic testing on mobile web and mobile apps, there are often reasons why you want to inspect traffic over a true cellular network instead.</p>
+
+<p>Perhaps you need to debug an ad that relies on carrier targeting, or you want to measure data usage or network latency through a true cellular connection.  These are more advanced use cases to be sure, but when you can’t get by with using your phone with Charles over Wifi, or a mobile emulator in Developer Tools.  Plus, Charles Proxy offers a host of powerful features like breakpoints, which you can use to test an experience in stages, or rewrite rules to reference a local file before you update your server, or blacklisting, which can be helpful to isolate the root of various technical problems.</p>
+
+<p>References:
+For iOS setup1</p>
+
+<p>For iOS setup2</p>
+
+<p>For Andriod setup 1</p>
+
+<p>For Andriod setup 2</p>
+
+<p>For Andriod setup 3</p>
+
+<p>For Andriod setup 4</p>
+
+<p>For Andriod setup 5</p>
+
+:ET

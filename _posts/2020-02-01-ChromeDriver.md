@@ -85,6 +85,11 @@ driver = webdriver.Chrome()
 driver.get('http://christopher.su')
 print driver.title
 ```
+
+### Using XVFB with Robot framework:
+Use the library mentioned Below
+
+
 ### Footnotes:
 1: You can find all the ChromeDriver releases here. If you’re using a 32-bit system or a non-Linux OS, the ChromeDriver download used above won’t work.
 
@@ -96,3 +101,7 @@ print driver.title
 3.[Ref 3](https://medium.com/@griggheo/running-selenium-webdriver-tests-using-firefox-headless-mode-on-ubuntu-d32500bb6af2)
 
 4.[Ref 4](https://askubuntu.com/questions/79280/how-to-install-chrome-browser-properly-via-command-line)
+
+5.[robotframework-xvfb](https://github.com/drobota/robotframework-xvfb)
+
+6.[Xvfb-RF Article](http://laurent.bristiel.com/robot-framework-selenium-and-xvfb/)

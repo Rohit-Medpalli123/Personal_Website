@@ -1,0 +1,31 @@
+I"s	<h2 id="how-to-use-charles-proxy-to-rewrite-https-traffic-for-web-applications">How to use Charles Proxy to rewrite HTTPS traffic for web applications</h2>
+
+<h3 id="rewriting-traffic-with-breakpoints">Rewriting traffic with Breakpoints</h3>
+
+<p>Now that we can inspect both HTTP and HTTPS traffic, we can start rewriting responses. The quickest way to achieve this is to use a Breakpoint. These are set up for specific resources (or Locations as they’re called in Charles Proxy) and will pause the response for us to modify before it reaches the client.</p>
+
+<p>You can right click on any level of the resource tree structure to create a breakpoint.</p>
+
+<p><img src="../../../../img/CharlesProxy/breakpoints.png" alt="alt text" /></p>
+
+<p>Without any dialogs or notification, this creates a Request &amp; Response breakpoint. You can see the entry (and future ones) from Breakpoint Settings found in the Proxy menu bar item. If you don’t want to pause for requests (I have never needed this), you can configure the breakpoint to be only for responses - double click on the breakpoint entry and uncheck Request.</p>
+
+<p><img src="../../../../img/CharlesProxy/edit-breakpoint.png" alt="alt text" /></p>
+
+<p>The next time you make a request that matches the URL, Charles will show a new tab listing the responses and/or requests queued up. This queue can quickly become overwhelming if your matcher is too greedy, shows both requests and responses or that the site is making regular poll requests. The Status row will be helpful in determining what’s going.</p>
+
+<p><img src="../../../../img/CharlesProxy/breakpoint-status.png" alt="alt text" /></p>
+
+<p>From within this tab, you can edit everything about the response: headers, cookies, JSON/HTML, etc. using the Edit Response subtab. Try changing the page’s response body using the different views available.</p>
+
+<p>After you’ve edited something, you have a choice of actions to take:</p>
+
+<p>Execute applies the changes and allow the response to reach its destination,
+Cancel discards your changes but continues to send the response,
+Abort kills the response, simulating a network failure.</p>
+
+<p><img src="../../../../img/CharlesProxy/breakpoint-status.png" alt="alt text" />breakpoints-rewrite.png</p>
+
+<h4 id="references">References:</h4>
+<p>1.<a href="https://www.adopsinsider.com/ad-ops-tools/charles-proxy-advanced/">All features explanation</a></p>
+:ET
