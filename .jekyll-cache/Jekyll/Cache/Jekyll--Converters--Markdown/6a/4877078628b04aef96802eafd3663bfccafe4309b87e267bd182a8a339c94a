@@ -1,0 +1,46 @@
+I"¸	<p>There are two philosophies when it comes to package installation, global first and local first. Global meaning all applications that rely on a certain package have access to the same copy of the library that was installed once. Local means that each project has its own folder of dependencies installed specifically for this project and each library is installed many times. NPM, for example, uses local first strategy. Pip in Python uses global first strategy by default.</p>
+
+<p>Both approaches have their benefits and drawbacks. In this post I wanted to show how to use a Python library called virtualenv to created isolated (local) python environments.</p>
+
+<p>virtualenv is used to manage Python packages for different projects. Using virtualenv allows you to avoid installing Python packages globally which could break system tools or other projects. You can install virtualenv using pip.</p>
+
+<h4 id="installing-virtualenv">Installing virtualenv:</h4>
+<p>As usual, itâ€™s as simple as:</p>
+
+<p>On macOS and Linux:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m pip install --user virtualenv
+</code></pre></div></div>
+
+<p>On Windows:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>py -m pip install --user virtualenv
+</code></pre></div></div>
+
+<h3 id="create-a-new-virtual-environment">Create a new virtual environment:</h3>
+<p>Navigate to the folder where you want the project set up and run:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>On macOS and Linux:
+
+python3 -m venv env
+
+On Windows:
+
+py -m venv env
+or
+virtualenv any_name_you_want
+</code></pre></div></div>
+
+<p>The second argument is the location to create the virtual environment. Generally, you can just create this in your project and call it env.</p>
+
+<p>venv will create a virtual Python installation in the env folder.</p>
+
+<p>Note You should exclude your virtual environment directory from your version control system using .gitignore or similar.
+This will set up Python as well as pip that you can use locally.</p>
+
+<p>Note that this command will install either Python 2 or Python 3 depending on your system set up. In my case it installs Python 3.</p>
+
+<p>The second argument is the location to create the virtual environment. Generally, you can just create this in your project and call it env.</p>
+
+<p>venv will create a virtual Python installation in the env folder.</p>
+:ET
