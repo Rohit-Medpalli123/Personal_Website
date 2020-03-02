@@ -6,9 +6,9 @@ category: Tool
 tags: [ 'Charles proxy', 'Tools' ]
 ---
 
-## How to use Charles Proxy to rewrite HTTPS traffic for web applications
+### How to use Charles Proxy to rewrite HTTPS traffic for web applications
 
-### Rewriting traffic with Breakpoints
+#### Rewriting traffic with Breakpoints
 
 Now that we can inspect both HTTP and HTTPS traffic, we can start rewriting responses. The quickest way to achieve this is to use a Breakpoint. These are set up for specific resources (or Locations as they’re called in Charles Proxy) and will pause the response for us to modify before it reaches the client.
 

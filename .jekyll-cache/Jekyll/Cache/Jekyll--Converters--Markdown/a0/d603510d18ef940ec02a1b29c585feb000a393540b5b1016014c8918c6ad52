@@ -1,9 +1,0 @@
-I"º<p>Cron allows Linux and Unix users to run commands or scripts at a given date and time. You can schedule scripts to be executed periodically. It is usually used for sysadmin jobs such as backups or cleaning /tmp/ directories and more. The cron service (daemon) runs in the background and constantly checks the /etc/crontab file, and /etc/cron.*/ directories. It also checks the /var/spool/cron/ directory.</p>
-
-<p>How Do I install or create or edit my own cron jobs?
-To edit or create your own crontab file, type the following command at the UNIX / Linux shell prompt:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ crontab -e
-</code></pre></div></div>
-
-:ET

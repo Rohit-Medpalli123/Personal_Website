@@ -105,3 +105,9 @@ Use the library mentioned Below
 5.[robotframework-xvfb](https://github.com/drobota/robotframework-xvfb)
 
 6.[Xvfb-RF Article](http://laurent.bristiel.com/robot-framework-selenium-and-xvfb/)
+
+7.[Stackoverflow-XVFB setup example](https://stackoverflow.com/questions/31045708/is-there-anyway-to-run-robot-framework-tests-without-a-display) 
+
+8.[XVFB and RF test example](https://gitlab.com/sejuba1/security-scorecard-online-store/-/tree/master)
+
+9.[XVFB-Installation steps](https://gist.github.com/addyosmani/5336747)

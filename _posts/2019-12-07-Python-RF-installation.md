@@ -75,6 +75,22 @@ tags: [ 'Python', 'Robot Framework']
 ***Note: If you add path to Environment variables, Robot framework (SeleniumLibrary) will automatically recognize the web drivers, thereby, you don’t need to explicitly mention web driver path in your test scripts.***
 
 ***OR***
+
 We can also add the drivers in the scripts folder of python, As python folder is already added to the Path
 
 ![alt text](../../../../img/python_rf_install/pyfolder.jpg)
+
+### References:
+[Selenium RB Ubuntu Install](https://5and3.co.uk/articles/effective-website-tests-with-robot-framework-and-selenium/)
+
+[Generic sample implementation](https://www.blazemeter.com/blog/robot-framework-the-ultimate-guide-to-running-your-tests/)
+
+[RF user guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
+
+
+
+[RF good Test cases](https://github.com/robotframework/HowToWriteGoodTestCases/blob/master/HowToWriteGoodTestCases.rst)
+
+[Demo app RF demo](https://github.com/robotframework/WebDemo/tree/master/login_tests)
+
+[RF Jupyter](https://nbviewer.jupyter.org/github/robots-from-jupyter/robotkernel/tree/master/examples/)
