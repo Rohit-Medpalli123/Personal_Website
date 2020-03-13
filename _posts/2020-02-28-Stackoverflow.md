@@ -20,3 +20,8 @@ tags: [ 'Doubts', 'Stackoverflow' ]
 [How to fail a test with conditions in Robot Framework](https://stackoverflow.com/questions/55518838/how-to-fail-a-test-with-conditions-in-robot-framework)
 
 [How to determine if my Python Requests call to API returns no data](https://stackoverflow.com/questions/37605278/how-to-determine-if-my-python-requests-call-to-api-returns-no-data/37605377)
+
+[RF-Browserstack](https://github.com/knightjacky/Robot-BrowserStack/blob/master/Resource/openBrowser.robot)
+
+[How can I find an element by CSS class with XPath?](https://stackoverflow.com/questions/1604471/how-can-i-find-an-element-by-css-class-with-xpath)
+

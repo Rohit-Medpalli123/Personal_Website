@@ -20,6 +20,8 @@ tags: ['Links']
 
 [Appium Library](https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html)
 
+[robotframework-appiumlibrary github](https://github.com/serhatbolsu/robotframework-appiumlibrary)
+
 [Python patterns](https://github.com/faif/python-patterns)
 
 [Restinstance](https://github.com/asyrjasalo/RESTinstance/)
@@ -27,3 +29,7 @@ tags: ['Links']
 [RequestsLibrary](https://bulkan.github.io/robotframework-requests/doc/RequestsLibrary.html)
 
 [RF official testcase example](https://github.com/robotframework/robotframework/blob/master/atest/testdata/standard_libraries/builtin/wait_until_keyword_succeeds.robot)
+
+[Auto-documenting Robot Framework Scripts](https://www.tacitknowledge.com/thoughts/auto-documenting-robot-framework-scripts/)
+
+[First mobile automation script using robot framework](https://automationlab0000.wordpress.com/2018/08/21/first-automation-script-using-robot-framework/)

@@ -1,2 +1,0 @@
-I"<p>Vagrant is a command-line tool for building and managing virtual machine environments. By default, Vagrant can provision machines on top of VirtualBox, Hyper-V, and Docker. Other providers such as Libvirt (KVM), VMware and AWS can be installed via the Vagrant plugin system.</p>
-:ET
