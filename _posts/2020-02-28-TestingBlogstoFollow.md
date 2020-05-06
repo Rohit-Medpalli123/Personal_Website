@@ -1,7 +1,7 @@
 ---
 layout: post
 section-type: post
-title: Title
+title: Selenium arcitecture
 category: Category
-tags: [ 'tag1', 'tag2' ]
+tags: [ 'Selenium' ]
 ---
