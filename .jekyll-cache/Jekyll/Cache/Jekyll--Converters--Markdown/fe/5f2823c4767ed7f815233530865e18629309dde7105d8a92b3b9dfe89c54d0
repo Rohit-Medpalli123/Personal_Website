@@ -1,0 +1,8 @@
+I"Z<h3 id="the-basics">The Basics</h3>
+
+<ul>
+  <li>Selenium WebDriver is a browser automation framework that allows you to execute your tests against different browser.</li>
+  <li>WebDriver interacts and controls the actual browser in either locally or remotely.</li>
+  <li>We can use WebDriver to automate and validate Web-Applications.</li>
+</ul>
+:ET

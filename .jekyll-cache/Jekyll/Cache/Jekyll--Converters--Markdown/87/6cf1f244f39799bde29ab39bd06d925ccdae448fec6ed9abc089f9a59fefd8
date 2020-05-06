@@ -1,0 +1,64 @@
+I"
+<h3 id="the-basics">The Basics</h3>
+
+<p>1.Selenium WebDriver is a browser automation framework that allows you to execute your tests against different browser.</p>
+
+<p>2.WebDriver interacts and controls the actual browser in either locally or remotely.</p>
+
+<p>3.We can use WebDriver to automate and validate Web-Applications.</p>
+
+<h3 id="how-selenium-webdriver-works-internally">How selenium WebDriver Works Internally</h3>
+
+<p>Let’s take a look at the below architecture:</p>
+
+<p><img src="../../../../img/Architecture/large.jpeg" alt="alt text" /></p>
+
+<p><img src="../../../../img/Architecture/SWebDriverArchi.png" alt="alt text" /></p>
+
+<p>The above picture depicts, there are four components of Selenium Architecture:</p>
+
+<ol>
+  <li>Selenium Client Library</li>
+  <li>JSON Wire Protocol over HTTP</li>
+  <li>Browser Drivers</li>
+  <li>Browsers</li>
+</ol>
+
+<p>We will try to understand each of these four components briefly:</p>
+
+<ol>
+  <li>Selenium Client Library</li>
+</ol>
+
+<p>Selenium supports multiple libraries such as Java, Ruby, Python, etc.
+It means that we can write our code with any of these scripting/programming languages.
+Selenium Client Library sends the request in the form of API to the Browser Driver with the help of JSON Wire Protocol over HTTP (hypertext Transfer Protocol).</p>
+
+<ol>
+  <li>JSON Wire Protocol over HTTP</li>
+</ol>
+
+<p>JSON stands for JavaScript Object Notation. It is a lightweight data-interchange format which transfers the data between a server and a client on the web.
+JSON Wire Protocol is a REST API that transfers the data between HTTP server .Every Browser Driver uses a HTTP server to receive HTTP requests.</p>
+
+<ol>
+  <li>Browser Driver</li>
+</ol>
+
+<p>Browser Drivers are used to communicate with browsers.
+Each browser has its specific Browser WebDriver.
+When a browser driver is received any command then that command will be executed on the respective browser and the response will go back in the form of HTTP response.
+Following are the operations performed when we run our automation script using specific Browser driver:</p>
+
+<ol>
+  <li>For each Selenium command, a HTTP () request is created and sent to the browser driver.</li>
+  <li>The browser driver uses a HTTP server for getting the HTTP requests.</li>
+  <li>HTTP Server sends all the steps to perform a function which are executed on the browser.</li>
+  <li>
+    <p>The HTTP server sends the status back to the automation script.</p>
+  </li>
+  <li>Browsers</li>
+</ol>
+
+<p>Selenium supports multiple browsers such as Firefox, Chrome, IE, Safari etc.</p>
+:ET
