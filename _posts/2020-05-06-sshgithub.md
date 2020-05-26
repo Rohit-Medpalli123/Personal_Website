@@ -2,8 +2,8 @@
 layout: post
 section-type: post
 title: Connecting to GitHub with SSH
-category: Github
-tags: [ 'ssh', 'instructions' ]
+category: installation
+tags: [ 'ssh', 'git', 'github' ]
 ---
 
 #### Links:

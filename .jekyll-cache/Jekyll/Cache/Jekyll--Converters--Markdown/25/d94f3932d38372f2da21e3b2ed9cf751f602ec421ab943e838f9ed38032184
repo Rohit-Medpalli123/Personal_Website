@@ -1,0 +1,74 @@
+I",<p>Follow below steps to add multiple accounts -
+Step 1:
+goto .ssh folder and generate ssh keys for all your github accounts</p>
+
+<p>$ cd ~/.ssh
+$ ssh-keygen -t rsa -b 4096 -C “personal_email_id”
+  # save as id_rsa_personal
+$ ssh-keygen -t rsa -b 4096 -C “work_email_id”
+  # save as id_rsa_work</p>
+
+<p>Step 2:
+Copy id_rsa_personal.pub and id_rsa_work.pub and add to respective github account.</p>
+
+<p>Step 3:
+create config file in .ssh folder And add below configs</p>
+
+<p>$ touch config</p>
+
+<h1 id="personal-account---default-config">Personal account - default config</h1>
+<p>Host github.com-personal
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_personal</p>
+<h1 id="work-account">Work account</h1>
+<p>Host github.com-work
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_work</p>
+
+<p>Step 4:
+create .gitconfig for personal and work directory with respective config git host names
+$ cd ~
+$ nano ~/.gitconfig</p>
+
+<p>[user]
+    name = personal_name
+    email = personal_email_id
+[includeIf “gitdir:~/work/”]
+    path = ~/work/.gitconfig</p>
+
+<p>$ nano ~/work/.gitconfig
+[user]
+    name = Coder Train
+    email = work_email_id</p>
+
+<p>Step 5:</p>
+
+<p>Add new ssh keys 
+$ cd ~/.ssh</p>
+
+<p>$ ssh-add id_rsa_personal
+$ ssh-add id_rsa_work</p>
+
+<p>$ ssh-add -l</p>
+
+<p>Step 6:
+check configuration is right by pinging to github with below commands</p>
+
+<p>$ ssh -T github.com-personal
+$ ssh -T github.com-work</p>
+
+<p>Step 7:
+Always clone repo by adding hostname in remote url
+e.g. git@github.com to git@github.com-personal</p>
+
+<p>git clone git@github.com-personal:sagarjunnarkar/sagarjunnarkar.github.io.git
+git@github.com-work:coder-train/multiple-git-accounts-demo.git</p>
+
+<p>Reference:</p>
+
+<p>How to manage multiple git accounts on same machine</p>
+
+<p>Multiple SSH Keys on a Mac</p>
+:ET
