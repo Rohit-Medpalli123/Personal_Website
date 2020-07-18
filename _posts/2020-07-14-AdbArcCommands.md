@@ -255,3 +255,4 @@ If you’re on a public network, make sure your device doesn’t have any sensit
 
 [ADB short youtube](https://youtu.be/45PcU2HIlYI)
 
+[Android Debug Bridge (ADB): Beyond the Basics](https://www.raywenderlich.com/621437-android-debug-bridge-adb-beyond-the-basics#toc-anchor-001)
