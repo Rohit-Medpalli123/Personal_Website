@@ -33,3 +33,5 @@ tags: ['Links']
 [Auto-documenting Robot Framework Scripts](https://www.tacitknowledge.com/thoughts/auto-documenting-robot-framework-scripts/)
 
 [First mobile automation script using robot framework](https://automationlab0000.wordpress.com/2018/08/21/first-automation-script-using-robot-framework/)
+
+[Additional features for RF using robotframework-zoomba](https://github.com/Accruent/robotframework-zoomba)
