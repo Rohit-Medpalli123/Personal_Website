@@ -57,8 +57,9 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "In God we trust,everything else I test"
   - text: "Exploiting the system for it's weakness"
+  - text: "Testers never assume,they challenge the assumptions"
 
-me-img: "/img/ironman.jpg"
+me-img: "/img/images.jpeg"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
@@ -129,8 +130,11 @@ syntax-highlight: True
 ############
 
 events:
-  - image: "/img/timeline/third.png"
-    date: "July 2019 - Today"
+  - image: "/img/timeline/fourth.jpg"
+    date: "July 2020 - Present"
+    description: "Sr. Software Test Engineer - Infilect Technologies"
+  - image: "/img/timeline/third.jpg"
+    date: "July 2019 - June 2020"
     description: "Software Test Engineer - Infilect Technologies"
   - image: "/img/timeline/second.png"
     date: "December 2017 - June 2019"
@@ -157,7 +161,7 @@ email: "rohitmedpalli@gmail.com"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Rohit is an awesome person. He lives in Bangalore, where he works on two-dimensional engineering projects. In his spare time, Rohit likes to watch animated movies"
+author_blurb: "Rohit is an serendipitous tester. He lives in Bangalore, where he works on two-dimensional engineering projects. In his spare time, Rohit likes to watch animated movies"
 author_blurb_image: "/img/author.png"
 
 ##################
