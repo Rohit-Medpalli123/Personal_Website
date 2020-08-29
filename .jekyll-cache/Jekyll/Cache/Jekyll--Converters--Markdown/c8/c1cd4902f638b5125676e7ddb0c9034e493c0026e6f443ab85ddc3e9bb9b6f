@@ -1,0 +1,16 @@
+I"<	<h3 id="overview">Overview</h3>
+<p>Cross-site Scripting (XSS) is a client-side code injection attack. The attacker aims to execute malicious scripts in a web browser of the victim by including malicious code in a legitimate web page or web application. The actual attack occurs when the victim visits the web page or web application that executes the malicious code. The web page or web application becomes a vehicle to deliver the malicious script to the user’s browser. Vulnerable vehicles that are commonly used for Cross-site Scripting attacks are forums, message boards, and web pages that allow comments.
+A web page or web application is vulnerable to XSS if it uses unsanitized user input in the output that it generates. This user input must then be parsed by the victim’s browser.</p>
+
+<h3 id="isnt-cross-site-scripting-the-users-problem">“Isn’t Cross-site Scripting the User’s Problem?”</h3>
+<p>If an attacker can abuse an XSS vulnerability on a web page to execute arbitrary JavaScript in a user’s browser, the security of that vulnerable website or vulnerable web application and its users has been compromised. XSS is not the user’s problem like any other security vulnerability. If it is affecting your users, it affects you.</p>
+
+<p>Cross-site Scripting may also be used to deface a website instead of targeting the user. The attacker can use injected scripts to change the content of the website or even redirect the browser to another web page, for example, one that contains malicious code.</p>
+
+<h3 id="description">Description</h3>
+<p>Cross-Site Scripting (XSS) attacks occur when:</p>
+
+<p>1.Data enters a Web application through an untrusted source, most frequently a web request.
+2.The data is included in dynamic content that is sent to a web user without being validated for malicious content.
+The malicious content sent to the web browser often takes the form of a segment of JavaScript, but may also include HTML, Flash, or any other type of code that the browser may execute. The variety of attacks based on XSS is almost limitless, but they commonly include transmitting private data, like cookies or other session information, to the attacker, redirecting the victim to web content controlled by the attacker, or performing other malicious operations on the user’s machine under the guise of the vulnerable site.</p>
+:ET
